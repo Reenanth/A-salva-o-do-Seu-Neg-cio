@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A Salvação do Seu Negócio Começa Agora — guia prático de 14 dias para diagnosticar, organizar e reposicionar seu negócio local.">
+  <meta property="og:title" content="A Salvação do Seu Negócio Começa Agora">
+  <meta property="og:description" content="Um guia prático para reestruturar seu negócio local em 14 dias.">
+  <meta property="og:type" content="website">
+  <title>A Salvação do Seu Negócio Começa Agora | R$ 37,90</title>
+  <style>
+    :root{
+      --bg:#080b12; --surface:#101522; --surface2:#151b2a; --text:#f7f8fb;
+      --muted:#aeb7c9; --accent:#ffb000; --accent2:#ff7a00; --line:rgba(255,255,255,.09);
+      --green:#35d07f; --max:1120px;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+    a{text-decoration:none;color:inherit}
+    .container{width:min(92%,var(--max));margin:auto}
+    .topbar{background:#ffb000;color:#111;text-align:center;padding:9px 15px;font-weight:800;font-size:.88rem}
+    .hero{position:relative;overflow:hidden;padding:80px 0 75px;background:
+      radial-gradient(circle at 80% 20%,rgba(255,176,0,.18),transparent 30%),
+      radial-gradient(circle at 10% 70%,rgba(255,122,0,.10),transparent 28%)}
+    .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:55px;align-items:center}
+    .eyebrow{display:inline-flex;padding:7px 12px;border:1px solid rgba(255,176,0,.35);border-radius:999px;color:#ffc54b;background:rgba(255,176,0,.08);font-weight:800;font-size:.8rem;letter-spacing:.04em;text-transform:uppercase;margin-bottom:20px}
+    h1{font-size:clamp(2.45rem,6vw,5rem);line-height:1.02;letter-spacing:-.055em;margin-bottom:22px}
+    h1 span{color:var(--accent)}
+    .hero p{font-size:1.15rem;color:var(--muted);max-width:680px;margin-bottom:28px}
+    .cta{display:inline-flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#111;font-weight:950;padding:17px 26px;border-radius:12px;box-shadow:0 14px 35px rgba(255,122,0,.22);transition:.2s;cursor:pointer}
+    .cta:hover{transform:translateY(-2px);filter:brightness(1.05)}
+    .micro{font-size:.82rem;color:#8f9aae;margin-top:12px}
+    .book{background:linear-gradient(145deg,#20283a,#0f1420);border:1px solid var(--line);border-radius:22px;padding:30px;box-shadow:0 25px 80px rgba(0,0,0,.4);transform:rotate(2deg)}
+    .cover{min-height:450px;border-radius:14px;padding:35px 28px;background:linear-gradient(160deg,#161c29,#090b11);border:1px solid rgba(255,176,0,.3);display:flex;flex-direction:column;justify-content:space-between}
+    .cover .mini{font-size:.75rem;color:#ffbf2f;font-weight:900;text-transform:uppercase;letter-spacing:.12em}
+    .cover h2{font-size:2.35rem;line-height:1.02;letter-spacing:-.04em}
+    .cover h2 strong{color:var(--accent)}
+    .cover .cover-bottom{color:#aab2c0;font-size:.88rem}
+    section{padding:85px 0}
+    .section-head{max-width:760px;margin-bottom:42px}
+    .section-head h2{font-size:clamp(2rem,4vw,3.2rem);line-height:1.08;letter-spacing:-.04em;margin-bottom:14px}
+    .section-head p{color:var(--muted);font-size:1.05rem}
+    .pain{background:#0c1019}
+    .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:25px}
+    .card .icon{font-size:1.6rem;margin-bottom:12px}
+    .card h3{font-size:1.05rem;margin-bottom:7px}
+    .card p{color:var(--muted);font-size:.94rem}
+    .highlight{border-left:4px solid var(--accent);padding:18px 20px;background:rgba(255,176,0,.07);border-radius:0 12px 12px 0;color:#dfe4ee}
+    .chapters{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+    .chapter{display:flex;gap:18px;background:var(--surface);border:1px solid var(--line);border-radius:15px;padding:22px}
+    .num{min-width:42px;height:42px;border-radius:11px;background:rgba(255,176,0,.12);color:#ffbd2e;display:grid;place-items:center;font-weight:950}
+    .chapter h3{margin-bottom:5px}.chapter p{color:var(--muted);font-size:.93rem}
+    .challenge{margin-top:28px;background:linear-gradient(135deg,rgba(255,176,0,.13),rgba(255,122,0,.05));border:1px solid rgba(255,176,0,.22);padding:28px;border-radius:18px}
+    .challenge strong{color:#ffc23b}
+    .timeline{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+    .day{padding:20px;border:1px solid var(--line);background:var(--surface);border-radius:14px}
+    .day b{color:#ffbd2e;display:block;margin-bottom:6px}
+    .offer{background:linear-gradient(180deg,#111725,#080b12);text-align:center}
+    .offer-box{max-width:760px;margin:auto;background:var(--surface);border:1px solid rgba(255,176,0,.3);border-radius:22px;padding:45px 25px;box-shadow:0 20px 70px rgba(0,0,0,.3)}
+    .price small{color:var(--muted);display:block}.price strong{font-size:4.4rem;line-height:1;color:#fff;letter-spacing:-.05em}.price strong::before{content:"R$ ";font-size:1.5rem;vertical-align:top;margin-right:3px;color:#ffc23b}
+    .checklist{list-style:none;text-align:left;max-width:470px;margin:28px auto}.checklist li{padding:9px 0;color:#dce2ec}.checklist li::before{content:"✓";color:var(--green);font-weight:900;margin-right:10px}
+    .faq{max-width:820px;margin:auto}.faq details{background:var(--surface);border:1px solid var(--line);border-radius:12px;margin:10px 0;padding:18px 20px}.faq summary{cursor:pointer;font-weight:800}.faq p{color:var(--muted);margin-top:10px}
+    .final{padding:95px 0 125px;text-align:center;background:radial-gradient(circle at 50% 0,rgba(255,176,0,.13),transparent 38%)}
+    .final h2{font-size:clamp(2.2rem,5vw,4rem);line-height:1.05;letter-spacing:-.05em;max-width:850px;margin:0 auto 20px}
+    .final p{color:var(--muted);max-width:650px;margin:0 auto 28px;font-size:1.08rem}
+    footer{border-top:1px solid var(--line);padding:25px 0;color:#7e899c;text-align:center;font-size:.82rem}
+    .sticky{display:none}
+    @media(max-width:850px){
+      .hero{padding:55px 0}.hero-grid{grid-template-columns:1fr;gap:40px}.book{transform:none}.cover{min-height:380px}
+      .grid3{grid-template-columns:1fr}.chapters{grid-template-columns:1fr}.timeline{grid-template-columns:repeat(2,1fr)}
+      section{padding:65px 0}.sticky{display:block;position:fixed;bottom:0;left:0;right:0;background:rgba(8,11,18,.94);backdrop-filter:blur(10px);padding:10px;z-index:20;border-top:1px solid var(--line)}
+      .sticky .cta{width:100%;padding:13px}.final{padding-bottom:120px}
+    }
+    @media(max-width:480px){.timeline{grid-template-columns:1fr}.price strong{font-size:3.7rem}}
+  </style>
+</head>
+<body>
+  <div class="topbar">UM PLANO PRÁTICO PARA COMEÇAR A ORGANIZAR SEU NEGÓCIO — R$ 37,90</div>
+
+  <header class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="eyebrow">Ebook digital • Plano de 14 dias</div>
+        <h1>Seu negócio não precisa esperar a próxima crise para <span>começar a mudar.</span></h1>
+        <p>Um guia prático para diagnosticar seu negócio, revisar sua precificação, organizar suas finanças, melhorar seu posicionamento e começar a construir uma presença na internet.</p>
+        <a class="cta" href="#oferta">QUERO COMEÇAR AGORA →</a>
+        <div class="micro">Pagamento e entrega digital pela Kiwify • Link do checkout será adicionado depois</div>
+      </div>
+      <div class="book" aria-label="Capa ilustrativa do ebook">
+        <div class="cover">
+          <div class="mini">Guia prático para negócios locais</div>
+          <h2>A SALVAÇÃO<br>DO SEU<br><strong>NEGÓCIO</strong><br>COMEÇA AGORA</h2>
+          <div class="cover-bottom">Diagnóstico • Precificação • Gestão • Posicionamento • Internet</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="pain">
+    <div class="container">
+      <div class="section-head">
+        <h2>Talvez o problema não seja falta de esforço.</h2>
+        <p>Você trabalha, tenta fazer o negócio acontecer e mesmo assim sente que alguma coisa não fecha?</p>
+      </div>
+      <div class="grid3">
+        <div class="card"><div class="icon">📉</div><h3>O movimento caiu?</h3><p>Menos pessoas entrando, menos pedidos e a sensação de que depender apenas do movimento da rua ficou arriscado.</p></div>
+        <div class="card"><div class="icon">💰</div><h3>Você sabe se está cobrando certo?</h3><p>Preço no improviso pode esconder custos e dificultar a tomada de decisões.</p></div>
+        <div class="card"><div class="icon">📱</div><h3>Seu negócio está na internet?</h3><p>Uma presença digital básica pode ajudar clientes a encontrar, conhecer e entrar em contato com sua empresa.</p></div>
+      </div>
+      <div class="highlight" style="margin-top:24px">Se você se identificou, talvez seja hora de parar de improvisar e começar a organizar o que realmente precisa de atenção.</div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <h2>Conheça “A Salvação do Seu Negócio Começa Agora”</h2>
+        <p>Um ebook criado para transformar problemas confusos em um caminho de ação simples e organizado.</p>
+      </div>
+      <div class="highlight"><strong>Não é um livro para você ler e esquecer.</strong><br>É um guia para estudar, preencher, analisar e colocar em prática.</div>
+      <div class="challenge"><strong>DESAFIO PRÁTICO NO FINAL DE CADA CAPÍTULO</strong><br>Você termina cada etapa com uma ação aplicável ao seu próprio negócio — para sair da leitura e partir para a execução.</div>
+    </div>
+  </section>
+
+  <section class="pain">
+    <div class="container">
+      <div class="section-head">
+        <h2>O que você vai encontrar dentro do ebook</h2>
+        <p>8 capítulos organizados para levar você do diagnóstico à execução.</p>
+      </div>
+      <div class="chapters">
+        <div class="chapter"><div class="num">01</div><div><h3>Diagnóstico do negócio</h3><p>Identifique os pontos que precisam de atenção e transforme sensação em informação.</p></div></div>
+        <div class="chapter"><div class="num">02</div><div><h3>Precificação</h3><p>Analise custos e entenda o preço mínimo necessário para vender com mais clareza.</p></div></div>
+        <div class="chapter"><div class="num">03</div><div><h3>Gestão financeira simples</h3><p>Organize entradas, saídas e informações essenciais sem complicar.</p></div></div>
+        <div class="chapter"><div class="num">04</div><div><h3>Posicionamento</h3><p>Deixe mais claro o que seu negócio oferece e por que um cliente deveria considerar você.</p></div></div>
+        <div class="chapter"><div class="num">05</div><div><h3>Presença digital básica</h3><p>Fundamentos de WhatsApp Business, Google e Instagram para começar a ser encontrado.</p></div></div>
+        <div class="chapter"><div class="num">06</div><div><h3>Primeira venda online</h3><p>Um caminho simples para começar a transformar presença digital em oportunidades.</p></div></div>
+        <div class="chapter"><div class="num">07</div><div><h3>Templates prontos</h3><p>Modelos de bio, posts e respostas para facilitar sua comunicação.</p></div></div>
+        <div class="chapter"><div class="num">08</div><div><h3>Plano de ação de 14 dias</h3><p>Transforme o conteúdo em uma sequência prática de execução.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <h2>Seu plano de 14 dias</h2>
+        <p>Uma sequência para você sair do “preciso mudar” e começar a trabalhar em mudanças concretas.</p>
+      </div>
+      <div class="timeline">
+        <div class="day"><b>Dias 1–2</b>Diagnóstico</div>
+        <div class="day"><b>Dias 3–4</b>Precificação</div>
+        <div class="day"><b>Dias 5–6</b>Organização financeira</div>
+        <div class="day"><b>Dias 7–8</b>Posicionamento</div>
+        <div class="day"><b>Dias 9–10</b>Presença digital</div>
+        <div class="day"><b>Dias 11–12</b>Venda online</div>
+        <div class="day"><b>Dias 13–14</b>Execução</div>
+        <div class="day"><b>Depois</b>Ajustar e continuar</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pain">
+    <div class="container">
+      <div class="section-head">
+        <h2>Para quem este ebook foi feito?</h2>
+      </div>
+      <div class="grid3">
+        <div class="card"><h3>✓ É para você se...</h3><p>Tem um negócio local e percebeu queda no movimento ou sente que precisa colocar a casa em ordem.</p></div>
+        <div class="card"><h3>✓ Você quer...</h3><p>Entender melhor seus preços, organizar as finanças e começar a usar a internet de forma prática.</p></div>
+        <div class="card"><h3>✕ Não é para você se...</h3><p>Procura fórmula de dinheiro rápido, resultado garantido ou pretende mudar o negócio sem executar as ações.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="oferta" class="offer">
+    <div class="container">
+      <div class="offer-box">
+        <div class="eyebrow">Oferta de lançamento</div>
+        <h2>Comece a organizar seu negócio agora.</h2>
+        <p style="color:var(--muted);margin:10px auto 24px;max-width:560px">Um guia prático para ajudar você a entender o que precisa ser ajustado e colocar um plano de ação em movimento.</p>
+        <div class="price"><small>Pagamento único</small><strong>37,90</strong></div>
+        <ul class="checklist">
+          <li>Ebook digital completo</li>
+          <li>8 capítulos práticos</li>
+          <li>Desafios práticos ao final dos capítulos</li>
+          <li>Plano de ação de 14 dias</li>
+          <li>Templates para comunicação</li>
+          <li>Bônus: canal de WhatsApp, conforme as condições da oferta</li>
+        </ul>
+        <!-- SUBSTITUA O # PELO LINK DO CHECKOUT DA KIWIFY -->
+        <a class="cta" href="#" onclick="alert('Adicione aqui o link do checkout da Kiwify.');return false;">QUERO MEU EBOOK AGORA →</a>
+        <div class="micro">Pagamento seguro pela Kiwify • Acesso digital após confirmação do pagamento</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-head" style="margin:auto auto 30px">
+        <h2>Perguntas frequentes</h2>
+      </div>
+      <div class="faq">
+        <details><summary>O ebook é físico?</summary><p>Não. É um produto digital.</p></details>
+        <details><summary>Como recebo o ebook?</summary><p>Após a confirmação do pagamento, o acesso será disponibilizado conforme as condições da oferta na Kiwify.</p></details>
+        <details><summary>Preciso ter experiência com internet?</summary><p>Não. O conteúdo foi pensado para quem está começando ou precisa organizar melhor sua presença digital.</p></details>
+        <details><summary>Quanto tempo preciso dedicar?</summary><p>O método foi estruturado em um plano de 14 dias, com ações práticas que podem ser realizadas progressivamente.</p></details>
+        <details><summary>O ebook garante aumento nas minhas vendas?</summary><p>Não. O ebook oferece orientação e ferramentas práticas, mas os resultados dependem da execução e das características de cada negócio.</p></details>
+        <details><summary>Como funciona o bônus do WhatsApp?</summary><p>As condições e o formato do canal devem ser informados conforme a oferta real disponibilizada ao comprador.</p></details>
+        <details><summary>Qual é a garantia?</summary><p>Insira aqui o prazo e as condições reais de garantia configuradas na Kiwify antes de publicar a página.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="final">
+    <div class="container">
+      <h2>O movimento não volta sozinho.</h2>
+      <p>Você pode continuar esperando as coisas melhorarem ou começar a entender o que precisa mudar. O primeiro passo é organizar o que está ao seu alcance.</p>
+      <a class="cta" href="#oferta">QUERO COMEÇAR AGORA — R$37,90</a>
+      <div class="micro">Um passo de cada vez. Um plano de cada vez.</div>
+    </div>
+  </section>
+
+  <div class="sticky">
+    <a class="cta" href="#oferta">QUERO COMEÇAR AGORA — R$37,90</a>
+  </div>
+
+  <footer>
+    <div class="container">© 2026 A Salvação do Seu Negócio Começa Agora • Todos os direitos reservados.</div>
+  </footer>
+</body>
+</html>
